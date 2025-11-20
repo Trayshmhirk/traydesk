@@ -1,0 +1,30 @@
+{
+  "name": "traydesk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TrayDesk - Multi-framework SaaS Ticket Management System",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:next": "pnpm --filter next-app dev",
+    "dev:vue": "pnpm --filter vue-app dev",
+    "dev:twig": "pnpm --filter twig-app dev",
+    "build:next": "pnpm --filter next-app build",
+    "build:vue": "pnpm --filter vue-app build",
+    "build:twig": "pnpm --filter twig-app build",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,scss}\"",
+    "clean": "pnpm -r clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^1.12.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.4"
+}
