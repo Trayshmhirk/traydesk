@@ -1,0 +1,33 @@
+{# This is the base twig file, extend it from other twig files #}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Twig Starter Template{% endblock %}</title>
+        {% block styles %}
+            <link rel="stylesheet" href="/styles/out.tailwind.css">
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/franken-ui@2.1.1/dist/css/core.min.css"
+            />
+
+        {% endblock %}
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    </head>
+
+    <body>
+        {% block content %}
+            {# Main content goes here from extended templates #}
+        {% endblock %}
+        
+        {% block scripts %}
+            {# Import or write javascript directly inhere #}
+            {# <script src="script.js"></script> #}
+            <script src="https://unpkg.com/lucide@latest"></script>
+            <script>
+                lucide.createIcons();
+            </script>
+        {% endblock %}
+    </body>
+</html>
