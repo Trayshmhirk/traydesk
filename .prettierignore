@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+pnpm-lock.yaml
+package-lock.json
+composer.lock
+vendor/
+
+# Build outputs
+.next
+dist
+build
+out
+.nuxt
+.output
+.turbo
+.cache
+
+# Framework specific
+.husky
+.github
+public
+.eslintrc.cjs
+
+# PHP/Twig
+vendor/
+var/
