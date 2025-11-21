@@ -1,228 +1,161 @@
-# TrayDesk - Multi-Framework SaaS Ticket Management System
+# 🎫 TrayDesk
 
-A modern, enterprise-grade ticket management system built with three different frontend frameworks: **Next.js**, **Vue.js**, and **Twig (PHP)**. This monorepo demonstrates consistent design language and feature parity across multiple technology stacks.
+## Multi-Framework SaaS Ticket Management System
 
-## 🚀 Project Structure
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg)](https://pnpm.io/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.0-black)](https://nextjs.org/)
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.5-4FC08D)](https://vuejs.org/)
+[![Twig](https://img.shields.io/badge/Twig-3.x-green)](https://twig.symfony.com/)
 
-```
-traydesk/
-├── apps/
-│   ├── next-app/          # Next.js implementation
-│   ├── next-app-latest/   # Latest Next.js with new features
-│   ├── vue-app/           # Vue.js implementation
-│   └── twig-app/          # Twig/PHP implementation
-├── packages/              # Shared packages (coming soon)
-│   └── ui/               # Shared UI components
-└── docs/                 # Documentation
-```
+A modern, enterprise-grade ticket management system showcasing **feature parity** and **consistent design** across three different frontend frameworks.
+
+**[Getting Started](./docs/getting-started.md)** · **[Architecture](./docs/architecture.md)** · **[Contributing](./docs/contributing.md)** · **[Report Bug](https://github.com/Trayshmhirk/traydesk/issues)**
+
+---
 
 ## ✨ Features
 
 ### Core Functionality
-- 🎫 **Full CRUD Operations** - Create, Read, Update, Delete tickets
-- 🔐 **Authentication & Authorization** - Secure login with session management
-- 📊 **Dashboard Analytics** - Real-time ticket statistics
-- 🎨 **Premium UI/UX** - Modern design with glassmorphism and animations
+
+- ✅ **Full CRUD Operations** - Create, Read, Update, Delete tickets
+- 🔐 **Secure Authentication** - Session-based authentication
+- 📊 **Real-time Dashboard** - Live ticket statistics
+- 🎨 **Premium UI/UX** - Modern design with glassmorphism
 - 📱 **Fully Responsive** - Mobile-first design approach
-- ♿ **Accessibility** - WCAG compliant with semantic HTML
+- ♿ **WCAG Accessible** - Semantic HTML and ARIA labels
 
 ### Design System
-- **Max Width**: 1440px centered layout
-- **Wavy Backgrounds**: SVG-based hero sections
-- **Decorative Elements**: Circles and card-based layouts
-- **Status Colors**:
-  - 🟢 Open - Green tones
-  - 🟡 In Progress - Amber tones
-  - ⚪ Closed - Gray tones
 
-## 🛠️ Tech Stack
+- **Max Width:** 1440px centered layout
+- **Wavy Backgrounds:** SVG-based hero sections
+- **Glassmorphism:** Modern UI effects
+- **Status Colors:** Green (open), Amber (in progress), Gray (closed)
+- **Smooth Animations:** Polished transitions
+- **Dark Mode Ready:** Theme support
 
-### Next.js App
-- **Framework**: Next.js 14+ (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: shadcn/ui
-- **State Management**: React Context/Hooks
-- **Package Manager**: pnpm
+---
 
-### Vue.js App
-- **Framework**: Vue 3 (Composition API)
-- **Language**: TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **State Management**: Pinia
-- **Package Manager**: pnpm
+## 🚀 Quick Start
 
-### Twig App
-- **Backend**: PHP 8+
-- **Template Engine**: Twig
-- **Styling**: Tailwind CSS
-- **Package Manager**: Composer + npm
-
-## 📦 Installation
-
-### Prerequisites
-- Node.js 18+
-- pnpm 8+
-- PHP 8+ (for Twig app)
-- Composer (for Twig app)
-
-### Setup
-
-1. **Clone the repository**
 ```bash
+# Clone and install
 git clone https://github.com/Trayshmhirk/traydesk.git
 cd traydesk
-```
-
-2. **Install dependencies**
-```bash
-# Install root dependencies
 pnpm install
 
-# Or install for specific app
-pnpm --filter next-app install
-pnpm --filter vue-app install
+# Run your preferred framework
+pnpm dev:next   # Next.js (Port 3200)
+pnpm dev:vue    # Vue.js (Port 5173)
+pnpm dev:twig   # Twig/PHP (Port 8000)
 ```
 
-3. **Run development servers**
+👉 **See [Full Setup Guide](./docs/getting-started.md) for detailed instructions**
 
-```bash
-# Next.js
-pnpm dev:next
+---
 
-# Vue.js
-pnpm dev:vue
+## 🏗️ Technology Stack
 
-# Twig (requires PHP)
-pnpm dev:twig
+| Framework      | Language   | Styling              | State Management |
+| -------------- | ---------- | -------------------- | ---------------- |
+| **Next.js 16** | TypeScript | Tailwind + shadcn/ui | Zustand          |
+| **Vue 3**      | TypeScript | Tailwind CSS         | Pinia            |
+| **Twig**       | PHP 8+     | Tailwind CSS         | PHP Sessions     |
+
+---
+
+## 📁 Project Structure
+
+```text
+traydesk/
+├── apps/
+│   ├── next-app/      # Next.js implementation
+│   ├── vue-app/       # Vue.js implementation
+│   └── twig-app/      # Twig/PHP implementation
+├── docs/              # Documentation
+└── packages/          # Shared packages (future)
 ```
 
-## 🎯 Development Workflow
+---
 
-### Daily Commit Plan (5-15 commits/day)
+## 📖 Documentation
 
-This project follows a structured development approach:
+- 📘 **[Getting Started](./docs/getting-started.md)** - Setup and installation guide
+- 🏛️ **[Architecture](./docs/architecture.md)** - Design decisions and structure
+- 🤝 **[Contributing](./docs/contributing.md)** - How to contribute to the project
 
-- **Day 1**: Monorepo setup & foundation
-- **Day 2**: Visual language & landing pages
-- **Day 3**: Authentication & security
-- **Day 4**: Dashboard architecture
-- **Day 5**: Ticket CRUD operations
-- **Day 6**: SaaS polish & optimization
+---
 
-### Git Workflow
-```bash
-# Feature development
-git checkout -b feature/ticket-filters
-git commit -m "feat(next): add ticket status filters"
-git push origin feature/ticket-filters
+## 🎨 Screenshots
 
-# Bug fixes
-git commit -m "fix(vue): resolve auth redirect loop"
+> Coming soon! Screenshots will be added once the UI is finalized.
 
-# Documentation
-git commit -m "docs: update API documentation"
-```
+---
 
-## 📝 Scripts
+## 🧪 Demo Credentials
 
-```bash
-# Development
-pnpm dev:next          # Run Next.js app
-pnpm dev:vue           # Run Vue.js app
-pnpm dev:twig          # Run Twig app
+Use these credentials to test the authentication:
 
-# Build
-pnpm build:next        # Build Next.js app
-pnpm build:vue         # Build Vue.js app
-pnpm build:twig        # Build Twig app
-
-# Linting & Formatting
-pnpm lint              # Lint all apps
-pnpm format            # Format all files
-
-# Cleanup
-pnpm clean             # Remove all node_modules
-```
-
-## 🔒 Authentication
-
-All implementations use localStorage-based session management:
-
-**Session Key**: `ticketapp_session`
-
-**Test Credentials**:
-```
+```text
 Email: admin@traydesk.com
 Password: admin123
 ```
 
-## 🎨 Design Guidelines
-
-### Layout Rules
-- Max width: 1440px (centered)
-- Mobile-first responsive design
-- Consistent spacing and typography
-- Accessible color contrast ratios
-
-### Component Structure
-- Reusable UI components
-- Consistent naming conventions
-- Prop validation and TypeScript types
-- Comprehensive error handling
-
-## 🧪 Testing
-
-```bash
-# Unit tests (coming soon)
-pnpm test
-
-# E2E tests (coming soon)
-pnpm test:e2e
-```
-
-## 📚 Documentation
-
-- [Next.js Implementation](./apps/next-app/README.md)
-- [Vue.js Implementation](./apps/vue-app/README.md)
-- [Twig Implementation](./apps/twig-app/README.md)
-- [Design System](./docs/design-system.md) (coming soon)
-- [API Documentation](./docs/api.md) (coming soon)
+---
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+We welcome contributions! Please see our **[Contributing Guide](./docs/contributing.md)** for details.
 
-### Commit Convention
-We follow [Conventional Commits](https://www.conventionalcommits.org/):
-- `feat:` - New features
-- `fix:` - Bug fixes
-- `docs:` - Documentation changes
-- `style:` - Code style changes (formatting, etc.)
-- `refactor:` - Code refactoring
-- `test:` - Adding tests
-- `chore:` - Maintenance tasks
+### Quick Contribution Steps
 
-## 📄 License
+```bash
+# 1. Fork and clone
+git clone https://github.com/YOUR_USERNAME/traydesk.git
 
-MIT License - see [LICENSE](./LICENSE) file for details
+# 2. Create a branch
+git checkout -b feature/my-feature
+
+# 3. Make changes and commit
+git commit -m "feat(next-app): add new feature"
+
+# 4. Push and create PR
+git push origin feature/my-feature
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
 
 ## 👨‍💻 Author
 
-**Osunbajo Micheal** (Trayshmhirk)
+### Osunbajo Micheal (Trayshmhirk)
+
 - GitHub: [@Trayshmhirk](https://github.com/Trayshmhirk)
+- Email: [harlex.mikkey@gmail.com](mailto:harlex.mikkey@gmail.com)
+
+---
 
 ## 🙏 Acknowledgments
 
 - Design inspiration from modern SaaS applications
-- shadcn/ui for beautiful React components
-- The open-source community
+- [shadcn/ui](https://ui.shadcn.com/) for beautiful React components
+- The open-source community for continuous support
 
 ---
 
-**Built with ❤️ as a demonstration of multi-framework expertise**
+## ⭐ Show Your Support
+
+Give a ⭐️ if this project helped you!
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Trayshmhirk/traydesk&type=Date)](https://star-history.com/#Trayshmhirk/traydesk&Date)
+
+---
+
+### Built with ❤️ to demonstrate multi-framework expertise
+
+[⬆ Back to Top](#-traydesk)
