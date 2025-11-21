@@ -1,4 +1,4 @@
-# 🎫 TrayDesk
+# TrayDesk
 
 ## Multi-Framework SaaS Ticket Management System
 
@@ -158,4 +158,4 @@ Give a ⭐️ if this project helped you!
 
 ### Built with ❤️ to demonstrate multi-framework expertise
 
-[⬆ Back to Top](#-traydesk)
+[⬆ Back to Top](#traydesk)
