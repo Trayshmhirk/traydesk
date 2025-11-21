@@ -15,8 +15,8 @@ importers:
         specifier: ^20.0.0
         version: 20.0.0
       '@prettier/plugin-php':
-        specifier: ^0.22.2
-        version: 0.22.4(prettier@3.6.2)
+        specifier: ^0.24.0
+        version: 0.24.0(prettier@3.6.2)
       '@types/node':
         specifier: ^24.10.1
         version: 24.10.1
@@ -1475,12 +1475,12 @@ packages:
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
     dev: true
 
-  /@prettier/plugin-php@0.22.4(prettier@3.6.2):
-    resolution: {integrity: sha512-uZWqfyrwsxScIYkmVcfnoQGFmKVMXTHD5pqYT4l8fxzm5P3XY94hTPbf8X6TFCi2QTZBIot7GS8lfIjQjldc2g==}
+  /@prettier/plugin-php@0.24.0(prettier@3.6.2):
+    resolution: {integrity: sha512-x9l65fCE/pgoET6RQowgdgG8Xmzs44z6j6Hhg3coINCyCw9JBGJ5ZzMR2XHAM2jmAdbJAIgqB6cUn4/3W3XLTA==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
-      linguist-languages: 7.31.2
+      linguist-languages: 8.2.0
       php-parser: 3.2.5
       prettier: 3.6.2
     dev: true
@@ -5010,8 +5010,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /linguist-languages@7.31.2:
-    resolution: {integrity: sha512-UQv5iuzEcGoYWdc/Ea2yqLiFbe8rQmIa5uD1FLwF5vBYmwbTvJlPJfHaIVtfYZTQf2wg7pzhxkwkGPP3q+v+EA==}
+  /linguist-languages@8.2.0:
+    resolution: {integrity: sha512-KCUUH9x97QWYU0SXOCGxUrZR6cSfuQrMhABB7L/0I8N0LXOeaKe7+RZs7FAwvWCV2qKfZ4Wv1luLq4OfMezSJg==}
     dev: true
 
   /lint-staged@16.2.7:
