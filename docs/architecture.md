@@ -19,7 +19,7 @@ TrayDesk uses **pnpm workspaces** to manage multiple applications in a single re
 
 **Framework**: Next.js 14+ with App Router
 
-#### Directory Structure
+#### Next.js Directory Structure
 
 ```c
 apps/next-app/
@@ -40,14 +40,14 @@ apps/next-app/
     └── utils.ts          # Utility functions
 ```
 
-#### Key Technologies
+#### Next.js Key Technologies
 
 - **State Management**: Zustand (lightweight, simple)
 - **Forms**: React Hook Form + Zod validation
 - **Styling**: Tailwind CSS + shadcn/ui
 - **Routing**: Next.js App Router with layouts
 
-#### Data Flow
+#### Next.js Data Flow
 
 ```c
 User Action → Component → Store (Zustand) → localStorage → UI Update
@@ -57,7 +57,7 @@ User Action → Component → Store (Zustand) → localStorage → UI Update
 
 **Framework**: Vue 3 with Composition API
 
-#### Directory Structure
+#### Vue.js Directory Structure
 
 ```c
 apps/vue-app/
@@ -72,14 +72,14 @@ apps/vue-app/
 └── index.html
 ```
 
-#### Key Technologies
+#### Vue.js Key Technologies
 
 - **State Management**: Pinia (official Vue store)
 - **Routing**: Vue Router
 - **Styling**: Tailwind CSS
 - **Build Tool**: Vite
 
-#### Data Flow
+#### Vue.js Data Flow
 
 ```c
 User Action → Component → Store (Pinia) → localStorage → Reactive Update
@@ -89,7 +89,7 @@ User Action → Component → Store (Pinia) → localStorage → Reactive Update
 
 **Backend**: PHP 8+ with Twig templating
 
-#### Directory Structure
+#### Twig Directory Structure
 
 ```c
 apps/twig-app/
@@ -102,7 +102,7 @@ apps/twig-app/
 └── composer.json
 ```
 
-#### Key Technologies
+#### Twig Key Technologies
 
 - **Template Engine**: Twig
 - **Styling**: Tailwind CSS
@@ -277,7 +277,7 @@ This project demonstrates:
 - **Best Practices**: Each framework's recommended patterns
 - **Comparison**: Performance, DX, and complexity trade-offs
 
-### Why Monorepo?
+### Monorepo Rationale
 
 - Easier to maintain consistency
 - Share configurations

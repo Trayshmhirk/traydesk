@@ -93,9 +93,9 @@ traydesk/
 
 1. Create a new branch:
 
-```bash
-git checkout -b feature/my-feature
-```
+   ```bash
+   git checkout -b feature/my-feature
+   ```
 
 2. Make your changes in the appropriate app directory
 
@@ -103,9 +103,9 @@ git checkout -b feature/my-feature
 
 4. Commit following conventional commits:
 
-```bash
-git commit -m "feat(next-app): add new feature"
-```
+   ```bash
+   git commit -m "feat(next-app): add new feature"
+   ```
 
 ### Code Quality
 
