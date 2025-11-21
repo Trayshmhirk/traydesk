@@ -2,69 +2,71 @@
 # Uncomment sections below when you want to enable automatic dependency updates
 
 version: 2
-updates: []
-# Uncomment below to enable dependency updates:
+updates:
+  # Update GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(deps)"
 
-# updates:
-#   # Update GitHub Actions
-#   - package-ecosystem: "github-actions"
-#     directory: "/"
-#     schedule:
-#       interval: "weekly"
-#     commit-message:
-#       prefix: "chore(deps)"
-#
-#   # Update root dependencies
-#   - package-ecosystem: "npm"
-#     directory: "/"
-#     schedule:
-#       interval: "weekly"
-#     commit-message:
-#       prefix: "chore(deps)"
-#     groups:
-#       # Group dev dependencies together
-#       dev-dependencies:
-#         patterns:
-#           - "@types/*"
-#           - "eslint*"
-#           - "prettier*"
-#           - "husky"
-#           - "lint-staged"
-#
-#   # Update Next.js app dependencies
-#   - package-ecosystem: "npm"
-#     directory: "/apps/next-app"
-#     schedule:
-#       interval: "weekly"
-#     commit-message:
-#       prefix: "chore(deps)"
-#       prefix-development: "chore(deps-dev)"
-#     groups:
-#       next-dependencies:
-#         patterns:
-#           - "next"
-#           - "react"
-#           - "react-dom"
-#
-#   # Update Vue app dependencies
-#   - package-ecosystem: "npm"
-#     directory: "/apps/vue-app"
-#     schedule:
-#       interval: "weekly"
-#     commit-message:
-#       prefix: "chore(deps)"
-#       prefix-development: "chore(deps-dev)"
-#     groups:
-#       vue-dependencies:
-#         patterns:
-#           - "vue"
-#           - "vue-router"
-#           - "pinia"
-#
-#   # Update Twig app dependencies (Composer)
-#   - package-ecosystem: "composer"
-#     directory: "/apps/twig-app"
-#     schedule:
-#       interval: "weekly"
-#     commit-message:
-#       prefix: "chore(deps)"
+  # Update root dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(deps)"
+    groups:
+      # Group dev dependencies together
+      dev-dependencies:
+        patterns:
+          - "@types/*"
+          - "eslint*"
+          - "prettier*"
+          - "husky"
+          - "lint-staged"
+
+  # Update Next.js app dependencies
+  - package-ecosystem: "npm"
+    directory: "/apps/next-app"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+    groups:
+      next-dependencies:
+        patterns:
+          - "next"
+          - "react"
+          - "react-dom"
+
+  # Update Vue app dependencies
+  - package-ecosystem: "npm"
+    directory: "/apps/vue-app"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+    groups:
+      vue-dependencies:
+        patterns:
+          - "vue"
+          - "vue-router"
+          - "pinia"
+
+  # Update Twig app dependencies (Composer)
+  - package-ecosystem: "composer"
+    directory: "/apps/twig-app"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "chore(deps)"

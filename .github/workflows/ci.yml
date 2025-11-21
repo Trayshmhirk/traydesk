@@ -32,8 +32,6 @@ jobs:
       # Step 3: Setup pnpm
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 8
 
       # Step 4: Get pnpm store directory (for caching)
       - name: Get pnpm store directory
@@ -87,8 +85,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 8
 
       - name: Get pnpm store directory
         id: pnpm-cache
